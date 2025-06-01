@@ -1,0 +1,18 @@
+# Byte-compiled / cache
+__pycache__/
+*.py[cod]
+
+# Build system
+dist/
+build/
+*.egg-info/
+
+# Environments
+.env
+.venv/
+venv/
+
+# IDE/editor settings
+.vscode/
+.idea/
+*.swp
