@@ -58,19 +58,22 @@ const LandingPage = () => {
             variants={blurInVariant}
             className="text-foreground text-center py-6 text-6xl md:text-7xl lg:text-8xl font-medium "
           >
-            InDepth Analytics, <br />
+            LLM Limits? Not Anymore.
+            <br />
             <span className="text-transparent bg-gradient-to-r from-violet-500 to-fuchsia-500 bg-clip-text">
-              Simple Integration
+              Unlimited AI, One Gateway
             </span>
           </motion.h1>
           <motion.p
             variants={blurInVariant}
             className="mb-8 text-lg md:text-xl tracking-tight text-muted-foreground "
           >
-            {siteConfig.name} helps you understand your users like never before.
+            {siteConfig.name} lets you use multiple API keys from multiple LLM
+            providers—automatically rotating and switching to keep your apps
+            running, no matter the rate limit.
             <br />
-            Track page views, user journeys, interactions, heatmaps, and
-            more—all in a sleek, privacy-first dashboard.
+            Register, add your keys, and get your own API endpoint. Never hit a
+            quota wall again.
           </motion.p>
           <div className="flex items-center justify-center gap-4">
             <motion.div
@@ -112,38 +115,38 @@ const LandingPage = () => {
               variants={blurInVariant}
               className="text-5xl text-balance leading-[1.3]"
             >
-              Powerful, Privacy-First Web Analytics for Modern Teams
+              Effortless LLM API Key Rotation & Provider Switching
             </motion.h1>
             <motion.p
               variants={blurInVariant}
               className="text-lg text-muted-foreground"
             >
-              <strong>AnalyticsX</strong> gives you real-time insights into user
-              behavior, session recordings, referral sources, demographics, and
-              more. Visualize heatmaps, track engagement, and optimize your web
-              app—all with a single, easy-to-integrate script.
+              <strong>{siteConfig.name}</strong> is the fastest way to overcome
+              LLM rate limits. Add all your OpenAI, Gemini, and Mistral keys—our
+              gateway rotates and switches for you, so your requests never get
+              blocked.
             </motion.p>
             <ul className="list-disc ml-6 text-base text-muted-foreground">
               <motion.li variants={slideUpVariant}>
-                Track page views, time on page, and session duration
+                Register and get your own API credentials instantly
               </motion.li>
               <motion.li variants={slideUpVariant}>
-                See where users come from (search, social, referral)
+                Add unlimited LLM API keys from any supported provider
               </motion.li>
               <motion.li variants={slideUpVariant}>
-                Visualize clicks and attention with heatmaps
+                Automatic key rotation within each provider
               </motion.li>
               <motion.li variants={slideUpVariant}>
-                Replay user sessions & interactions
+                Cross-provider switching when limits are hit
               </motion.li>
               <motion.li variants={slideUpVariant}>
-                Segment by device, location, and demographics
+                Real-time usage metrics and rate limit status
               </motion.li>
               <motion.li variants={slideUpVariant}>
-                Minimalist, dark UI—built for focus and clarity
+                Minimalist dashboard for API key management
               </motion.li>
               <motion.li variants={slideUpVariant}>
-                Easy setup: add a single script to your site
+                Simple REST API—no SDK required
               </motion.li>
             </ul>
             <motion.div
@@ -151,13 +154,9 @@ const LandingPage = () => {
               className="relative border px-6 py-2 text-xl rounded flex items-center group cursor-pointer w-fit"
               onClick={toggleAuthDialog}
             >
-              {/* <MovingGlow /> */}
               <GradientInsetBackground />
-              Get started
-              <ArrowRightIcon
-                className="ml-1 size-4 transition-all duration-300 
-                group-hover:translate-x-1"
-              />
+              Try {siteConfig.name} Now
+              <ArrowRightIcon className="ml-1 size-4 transition-all duration-300 group-hover:translate-x-1" />
             </motion.div>
           </motion.div>
           <ConicGradientBackground />
