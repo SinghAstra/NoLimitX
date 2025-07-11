@@ -1,3 +1,3 @@
-# MemoryX
+# NoLimitX
 
-A very basic example Python package that says hello.
+ByPassing LLM Rate Limits
